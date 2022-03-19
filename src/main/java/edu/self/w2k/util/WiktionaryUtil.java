@@ -39,7 +39,7 @@ public final class WiktionaryUtil {
         entryFilter.setAllowedWordLanguages(languageCode);
 
         int count = 0;
-        File file = new File("dictionaries/lexicon.txt");
+        File file = new File("dictionaries/lexicon-" + lang + "-en.txt");
         try (BufferedWriter lexicon = new BufferedWriter(new FileWriter(file, StandardCharsets.UTF_8))) {
 
             LOG.info("Generating entries…");
